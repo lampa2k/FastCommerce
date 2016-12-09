@@ -1,0 +1,78 @@
+<script src=<BaseLoja>htm/simulador.js></script>
+
+<div class=custom_title>Simulação de preços para Tapetes de couro bovino</div>
+
+<br><br><table>
+<tr><td>Largura<td><input type=number name=largura style='width: 50px;' step='0.1' value="1.5" min='0.5' onchange="calcula(this);"> metros (Ex.: 1,5)
+<tr><td>Comprimento<td><input type=number name=comprimento style='width: 50px;' step='0.1' value="2.0" min='0.5' onchange="calcula(this);"> metros (Ex.: 2,0)
+<tr><td>Diâmetro<td><input type=number name=diametro style='width: 50px;' step='0.1' min='0.5' onchange="calcula(this);"> metros (No caso de tapete redondo)
+<tr><td>Área<td><span id=area></span>
+<tr><td>Forro<td>
+<select name=forro onchange="calcula();">
+<option value=t>TNT/Nylon</option>
+<option value=c>Antiderrapante e antimicrobiano</option>
+</select> <a href=/custom.asp?IDLoja=20214&arq=faq.html#forro target="_blank">Saiba mais</a>
+<tr><td>Placas<td>
+<select name=placas onchange="calcula();">
+<option value=5x5>5 x 5 cm</option>
+<option value=10x10>10 x 10 cm</option>
+<!-- <option value=7x7>7 x 7 cm</option> -->
+<option value=15x15>15 x 15 cm</option>
+<!-- <option value=mand>Mandala</option> -->
+<option value=20x20>20 x 20 cm</option>
+<option value=30x30>30 x 30 cm</option>
+<!-- <option value=40x40>40 x 40 cm</option> -->
+</select><!-- Mandala: apenas para tapetes redondos. -->
+<tr><td>Costura<td>
+<select name=costura onchange="calcula();">
+<option value=>Zigue-zague</option>
+<option value=i>Invisível</option>
+</select> Invisível: placas de 15x15cm ou maiores. <a href=/custom.asp?IDLoja=20214&arq=faq.html#invisivel target="_blank">Saiba mais</a>
+<tr><td>Cor<td><select name=cor onchange="calcula();">
+<option value='branco'>Tons de branco</option>
+<option value='bege'>Tons de bege</option>
+<option value='cinza'>Tons de cinza</option>
+<option value='preto'>Preto tingido</option>
+<option value='natural'>Outro tom de cor natural</option>
+<option value='colorido'>Colorido ou tingido</option>
+</select>
+<tr><td>Outras observações<td><input type=text name=obs size=50 maxlength=50>
+<tr><td colspan=2><input type=button value="Calcular" onclick="calcula();">
+</table>
+
+<br><font size=2><b>Simulação do preço do tapete: <span id=preco></span></b></font>
+
+<br><br><b>Observações importantes:</b>
+<ul>
+<li>O produto simulado trata-se de <b>Tapete de couro bovino, com pelos, modular, costurado</b>.<br>Para tapetes de lã de carneiro ou outros produtos, queira entrar em contato para obter os valores.
+<li>Os valores e modelos informados nesta simulação são aproximados e <b>não constituem um orçamento formal</b>.<br>Para obter um orçamento definitivo, queira nos enviar o resultado desta simulação para análise.
+<li>A costura invisível só é possível em placas de 15x15cm ou maiores.
+<li>Tapetes com mais de 6 metros quadrados geralmente não podem ser fabricados com placas menores que 10 cm.
+<!--<li>Orçamento válido para cores naturais. Para cores tingidas, por favor, solicite um orçamento especial.-->
+</ul>
+
+<form name=enviar method=POST action=EnviaMail.asp>
+<center><br><table>
+<tr><td>Nome: <td><input type=text name=NomeDe size=20>
+   <td>Telefone(s): <td><input type=text name=Telefone size=20>
+   <td>e-mail: <td><input type=text name=EmailDe size=30>
+</table>
+<input type=hidden name=Produto>
+<input type=hidden name=Assunto value='Análise de orçamento do simulador'>
+<input type=hidden name=EmailPara value='contato@facanabota.com'>
+<input type=hidden name=URLRetorno value='<HTMLoja>simulador.htm'>
+<input type=button value="Pedir análise do orçamento acima" onclick="email();">
+</center>
+</form>
+
+<br><br><b>Outras observações:</b>
+<ul>
+<li>O pagamento pode ser feito em até 12x sem juros nos cartões ou com 20% de desconto à vista no boleto, depósito ou cartão de débito.
+<li>O frete é grátis para todo o Brasil.
+<li>O prazo para fabricação do tapete é de até 20 dias úteis.
+<li>Para mais informações sobre os tapetes, pagamento, ou quaisquer outras dúvidas, consulte a seção de <a href=/custom.asp?IDLoja=20214&arq=faq.html target="_blank">Perguntas Frequentes</a>.
+</ul>
+
+<script>
+document.title = "Simulador de Preços - Loja Faca na Bota";
+</script>
