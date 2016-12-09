@@ -1,0 +1,79 @@
+<style>
+input, select { font-size: 8pt; }
+li { padding: 2px; }
+</style>
+
+<script>
+var codigo = Math.round( Math.random()*100 ) * 100;
+
+function enviar() {
+  alert("Os dados referentes a troca/devolução foram enviados.\n\nMonitore a entrega do pacote e volte a nos contatar no dia seguinte após o produto ter chegado aqui.\n\nO código de sua solicitação é "+codigo);
+document.getElementsByName("CodigoRemessa")[0].value = codigo;
+  document.getElementsByName("remessa")[0].submit();
+} // func
+</script>
+
+<div class=custom_title>Troca ou devolução de produto</div>
+
+<br>Prezado cliente,
+<br>Para requisitar troca ou devolução dos produtos adquiridos *, queira, por gentileza, preencher as informações abaixo e
+<br>depois anotar seu <b>Código da Solicitação: <script>document.write(codigo);</script></b>
+
+<br><br>Após enviar os dados do formulário, queira remeter o produto, junto com uma cópia ou original da <b>nota fiscal</b>
+<br>pelo sistema <b>PAC (Encomenda Normal) dos Correios</b>, para o endereço abaixo:
+<br><br>Renato M. P. Teixeira
+<br>Caixa Postal 07
+<br>CEP 97200-000 Restinga Seca-RS
+
+<br><form name=remessa method=POST action=EnviaMail.asp class=quest>
+
+<input type=hidden name=Assunto value='Troca/Devolucao de produto'>
+<input type=hidden name=EmailPara value='contato@facanabota.com'>
+<input type=hidden name=CodigoRemessa>
+<input type=hidden name=OrdemCampos value="CodigoRemessa,Pedido,Produto,Procedimento,Motivo,Observacoes">
+<input type=hidden name=URLRetorno value='<HTMLoja>remessa.html'>
+
+<br><b>Por gentileza, informe seus dados, como constam no seu pedido:</b>
+
+<br><br><table>
+<tr><td align=right><b>Nome:</b> <td><input type=text name=NomeDe size=30 value="<NomeCliente>">
+<tr><td align=right><b>e-mail:</b> <td><input type=text name=EmailDe size=30>
+<tr><td align=right><b>Número do pedido:</b> <td><input type=text name=Pedido size=10>
+</table>
+
+<br><table>
+
+<tr><td>
+
+<b>Produto a ser trocado/devolvido:</b>
+ <input type=text name=Produto size=30>
+
+<br><br><b>O que deseja fazer?</b>
+<br><input type=radio name=Procedimento value="Trocar por igual"> Trocar por um igual ou consertar
+<br><input type=radio name=Procedimento value="Trocar por outro"> Trocar por outro produto
+<br><input type=radio name=Procedimento value="Devolver"> Apenas devolver o produto
+
+<br><br><b>Porque você está trocando ou devolvendo o produto?</b>
+<br><input type=text name=Motivo size=50>
+
+<br><br><b>Gostaria de fazer alguma observação?</b>
+<br><input type=text name=Observacoes size=60>
+
+</table>
+
+<br><input type=button value="Enviar dados" onclick="enviar();">
+
+</form>
+
+<br>* Após a chegada dos produtos na loja, o mesmo será analisado quanto aos problemas informados e, a partir de então, deve-se considerar um prazo de até 10-15 dias para consertos ou de até 20-25 dias para fabricação de um novo produto, caso o mesmo não esteja mais em estoque.
+
+<br><br>* A troca ou devolução pode ocorrer por um dos seguintes motivos:
+<ul style="text-align: justify; padding-right: 10px;">
+<li>O produto tem um ou mais defeitos de fabricação, como, por exemplo: falha na costura, perda excessiva de pelo, furos, rachaduras, focos de ferrugem, arranhões, etc. Neste caso, você poderá, se desejar, solicitar o depósito das despesas de remessa, nos informando, por e-mail, seu nome, número do pedido, dados bancários (Banco, Agência, Tipo de conta e número da conta) e CPF, para realização de DOC, se necessário;
+<li>O produto não tem as mesmas características das especificações do site, como, por exemplo: cor, bordas, tipo de costura, tamanho, tipo de forro, estilo do cabo, tamanho e tipo da lâmina, textura do couro, tipo de alça, tipo de rodinhas, etc. Considere, no entanto, que pequenas variações podem ocorrer, pois os produtos são artesanais e a matéria prima é de origem natural;
+<li>Você, valendo-se do direito do consumidor do comércio eletrônico, não ficou totalmente satisfeito com o produto e deseja devolvê-lo ou trocá-lo no prazo de 7 dias após o recebimento do pacote. Neste caso, o cliente irá cobrir as despesas da remessa do produto, e terá o valor pago no produto estornado em seu cartão de crédito ou depositado em sua conta bancária, dependendo do método utilizado na compra.
+</ul>
+
+<script>
+document.title = "Trocas e Devoluções - Loja Faca na Bota";
+</script>
