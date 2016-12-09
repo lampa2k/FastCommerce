@@ -1,0 +1,11 @@
+/* Estilos personalizados */
+
+.EstPassoCompraDiv {display:none}
+.EstContinuarComprando {display:none;}
+#TabBancos {display:none;}
+.PedLinkRodape{color:004a8a;text-decoration:underline}
+.TopoMenu{display:none}
+body{background-color: #fff;}
+#TabSite{text-align:center;margin:0px 0px 0px 5%;}
+.FundoBarraEsquerda{display:none}
+.EstEspacoEsquerdaConteudo{position:absolute;left:-2000px;}
