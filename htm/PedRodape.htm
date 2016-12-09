@@ -1,0 +1,71 @@
+<script>
+function FuncChkPaymentEnd (){  	
+  	var titVisaEletron = "Débito VISA Electron";
+  	var compTitVisaE = '<label for="Pagto16">'+titVisaEletron+'</label>';'
+	document.getElementById("idTxtPagto16FC").innerHTML=compTitVisaE;
+}
+</script>
+
+<!--
+<script language=JavaScript src="<BaseLoja>htm/jquery.js"></script>
+<script>
+$("Form1").ready(function() {
+  $("#P2Endereco").maxLength = 50;
+  window.console.log($("#P2EnderecoNum").name);
+  $("P2EnderecoNum").attr("maxlength", 6)
+  $("#P2EnderecoCompl").maxLength = 30;
+});
+</script>
+-->
+
+<link href="<BaseLoja>htm/LojaEstilos.css" rel="stylesheet" type="text/css">
+<script>
+try{ ExibePassosCompra(); } catch(e) {} //Exibe botões dos passos de compra personalizados
+if(sPag.indexOf("CADASTRO")>=0){
+  ExibeBotaoConfirmaPedido(); //Colocar conteúdo no topo da página de confirmar o pedido
+  oTabRegisterFC=document.getElementById("idTabRegisterFC");
+  if(oTabRegisterFC)oTabRegisterFC.cellPadding="5x";
+}
+</script>
+
+<style>
+.FundoSiteInt { width: 900px; }
+.FundoBarraEsquerda{background-image: url(/images/shim.gif);width:1px;}
+.FundoBarraDireita {background-image: url(/images/shim.gif)}
+.LinkRodape{color:666666;text-decoration:none;}
+</style>
+<!--[if IE]><style>.FundoBarraEsquerda{background:none;display:inline;width:80px}</style><![endif]-->
+<br>
+<center><img src="<BaseLoja>images/pix.png" width="970" height="1"/></center>
+<table bgcolor=#ffffff align=center cellspacing=3 cellpadding=4>
+  <tr>
+    <td><iframe scrolling=no frameborder=0 name=iframeThawte ID=iframeThawte src=https://www.rumo.com.br/sistema/SeloThawte.htm style=width:80;height:80></iframe></td>
+  </tr>
+</table>
+<center><img src="<BaseLoja>images/pix.png" width="970" height="1"/></center>
+<table width="800" align="center" cellspacing=0 cellpadding=0>
+  <tr height=30>
+    <td width="60%" align="center">
+      <table align=center height=50>
+        <tr>
+        <td align=center><a href="home.asp?IDLoja=<IDLojanum>" class="LinkRodape">Home</a></td>
+        <td align=center>|</td>
+        <td align=center><a href="addProduto.asp?IDLoja=<IDLojaNum>" class="LinkRodape">Seu pedido</a></td>
+        <td align=center>|</td>
+        <td align=center><a href="faleconosco.asp?IDLoja=<IDLojaNum>" class="LinkRodape">Contato</a></td>
+        <td align=center>|</td>
+        <td align=center><a href="ajuda.asp?IDLoja=<IDLojaNum>" class="LinkRodape">Ajuda</a></td>
+        </td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<center><img src="<BaseLoja>images/pix.png" width="970" height="1"/></center>
+<br>
+<table width="100%">
+	<tr>
+		<td align="center">
+			Copyright © <b><a href="home.asp?idloja=<idloja>" class="PedLinkRodape"><NomeLoja></a></b> - Todos os direitos reservados<br>
+		</td>
+	</tr>
+</table>
