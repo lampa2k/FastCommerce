@@ -1,0 +1,293 @@
+<script>
+IDLoja='<IDLoja>'; //Obtém IDLoja para montar links
+var sPag=document.location.href.toUpperCase();
+IDLojaNum='<IDLojaNum>';
+sCaminhoImages='<BaseLoja>images/'
+</script>
+<script src=<BaseLoja>htm/LojaLib.js></script>
+<script language=JavaScript src=<BaseLoja>htm/prototype.js></script>
+<script language=JavaScript src=<BaseLoja>htm/autocomplete.js></script>
+<script language=JavaScript src="../sistema/magiczoom.js"></script>
+<script src=RequestObject.js></script>
+<!-- Style Busca Detalhada -->
+<!--[if IE]>
+<style>.productMenuClass3 {margin-left:-70px;margin-top:18px;}.productMenuClass {margin-left:-74px;margin-top:18px;}</style>
+<![endif]-->
+
+<!--
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-31037729-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+
+<script language=JavaScript src="<BaseLoja>htm/jquery/jquery.js"></script>
+<link rel="stylesheet" href="<BaseLoja>htm/jquery/jquery_ui.css"> 
+<script type="text/javascript" src="/jquery-ui-1.9.1.custom.js"></script>
+
+<script type="text/javascript" src="<BaseLoja>htm/autosuggest.js"></script>
+<!--[if IE]>
+<style type="text/css">.ui-autocomplete-category{margin-top: -2px}</style>
+<![endif]-->
+
+<script>
+  jQuery.noConflict();
+  var $ = jQuery;
+</script>
+
+<script>
+var IDLojaAS='<IDLoja>'
+var CaminhoProdAS='<BaseLoja>prod/' 
+var g1='5'; //Quantidade de itens do grupo g1(Termos), Padrão 5, Máximo 9, 0 Não exibe
+var g2='3'; //Quantidade de itens do grupo g2(Páginas), Padrão 3, Máximo 9, 0 Não exibe
+var g3='5'; //Quantidade de itens do grupo g3(Produtos), Padrão 5, Máximo 9, 0 Não exibe
+var g4='3'; //Quantidade de itens do grupo g4(Notícias), Padrão 3, Máximo 9, 0 Não exibe
+</script>
+
+<script language="JavaScript" src="<BaseLoja>htm/facanabota.js"></script>
+<script language="JavaScript" src="<BaseLoja>htm/var.js"></script>
+<link rel="stylesheet" href="<BaseLoja>htm/facanabota.css">
+
+<link href="<BaseLoja>htm/jquery/jflow.css" type="text/css" rel="stylesheet"/>
+<script src="<BaseLoja>htm/jquery/jflow.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="<BaseLoja>htm/jquery/marquee.js"></script>
+<script type="text/javascript" src="<BaseLoja>htm/jquery/pause.js"></script>
+
+<link rel="stylesheet" href="<BaseLoja>htm/jquery/fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="<BaseLoja>htm/jquery/fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" href="<BaseLoja>htm/jquery/fancybox_thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="<BaseLoja>htm/jquery/fancybox_thumbs.js?v=1.0.7"></script>
+
+<link rel="stylesheet" href="<BaseLoja>htm/jquery/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" />
+<script src="<BaseLoja>htm/jquery/prettyPhoto.js" type="text/javascript"></script>
+
+<!-- Google Code for Tag de remarketing -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 966065932;
+var google_conversion_label = "uQqUCIyvvwQQjP7TzAM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/966065932/?value=0&amp;label=uQqUCIyvvwQQjP7TzAM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<LINK REL="SHORTCUT ICON" HREF="<BaseLoja>images/favicon.gif">
+
+<style>
+#frete { margin-top: 10px; background: #fafafa; padding: 3px; border: 1px solid #a50; width: 150px; }
+.frete1 { font-size: 140%; font-weight: bold; color: #E13300; }
+.frete2 { font-size: 120%; font-weight: bold; color: #E13300; }
+.home_title { font-size: 12pt; font-weight: bold; color: orange; text-align: center; padding: 10px; }
+.gray { color: #555; font-size: 8pt; font-weight: normal; }
+.linha { border-top: 1px dotted #aaa; padding-top: 10px; }
+.pronta { text-align: center; color: #5a0; font-weight: bold; }
+.disponibilidade, .disponibilidade a { font-size: 7pt; color: #8c5; margin-top: 0px; font-weight: normal; }
+#dispo .AdicNomeCapa { color: #050; }
+#dispo .AdicItemCapa { color: #0A0; }
+.custom_title { color: #C30; font-weight: bold; font-size: 14pt; }
+.MenuTop a { height: 16px; line-height: 16px; }
+</style>
+
+<table style="width: 1000px; margin-top: -25px; height: 183px; background: url(<BaseLoja>images/fundo_topo.jpg); no-repeat" name=TabMenuSuperior cellpadding=0 cellspacing=0> <!-- TB1 -->
+  <tr>
+    <td valign=center>
+		<a href=home.asp?IDLoja=<IDLoja>>
+		<img src=<BaseLoja>images/logo.png border=0 width=200 alt="Faca na Bota">
+		</a>
+	</td> <!-- td logo -->
+	<td align=center valign=center> <!-- td menutop -->
+
+<table width=100%> <!-- menutop -->
+<td align=left valign=center nowrap class=MenuTop>
+<a href="custom.asp?IDLoja=<IDLoja>&arq=quemsomos.html"><img src="<BaseLoja>images/IcTopo.png">&nbsp;Quem Somos</a><br>
+<a href="custom.asp?idloja=<IDLoja>&arq=depoimentos.htm"><img src="<BaseLoja>images/IcTopo.png">&nbsp;Depoimentos</a><br>
+<a href="indique.asp?IDLoja=<IDLoja>#Seguranca"><img src="<BaseLoja>images/IcTopo.png">&nbsp;Indique a loja</a><br>
+<a href="custom.asp?idloja=<IDLoja>&arq=questionario.htm"><img src="<BaseLoja>images/IcTopo.png">&nbsp;Questionário</a><br>
+<a href="custom.asp?idloja=<IDLoja>&arq=promo2014.html"><img src="<BaseLoja>images/IcTopo.png">&nbsp;Promoções</a><br>
+<a href="custom.asp?IDLoja=<IDLoja>&arq=faq.html"><img src="<BaseLoja>images/IcTopo.png">&nbsp;Perguntas Frequentes</a><br>
+<a href="http://www.facebook.com/facanabota"><img src="<BaseLoja>images/IcTopo.png">&nbsp;Facebook</a><br>
+<a href="ajuda.asp?IDLoja=<IDLoja>"><img src="<BaseLoja>images/IcTopo.png">&nbsp;Ajuda</a>
+</table> <!-- menutop -->
+
+<td align=center valign=center nowrap> <!-- td busca -->
+
+<a href=cadastro.asp?IDLoja=<IDLoja>>
+<b style='font-size: 11pt;'>Faça seu cadastro</b>
+<br><span style='color: black;' >Fique por dentro de nossas promoções!
+<br><b>Clique aqui.</b></span></a>
+
+<br><br>
+
+<div style='width: 190px; text-align: left; wrap: none;'>
+<form name=buscaprod method=GET id="autocomplete-form" action=listaProdutos.asp?IDLoja=<IDLoja> onSubmit="return VerTexto(this)">
+<form name=buscaprod method=GET action=listaProdutos.asp?IDLoja=<IDLoja> onSubmit="return VerTexto(this)">
+<b style='padding-top: 3px;'>Busca:</b>
+<br><input type=text class=InputTextBusca name=Texto id="autocomplete" maxlength=35 value="<SearchText>" style="width:180px;">
+<input type=hidden name=IDLoja value="<IDLoja>"><input type=hidden name=Y value="<Y>"><input type=hidden name=Digitada value=True>
+ <input type=image name=ok src=<BaseLoja>images/BotOkBusca.png style="margin-bottom: -4px;">
+<br><a href=BuscaAvancada.asp?IDLoja=<IDLoja>>Busca detalhada</a>
+</div>
+<div style="text-align: center; padding-top: 6px;">Use também o menu esquerdo<br>para navegar pelos produtos</div>
+</form>
+</form>
+
+<td align=center nowrap valign=center> <!-- td chat -->
+<a href='#' onclick='chat(); return false;'><img src="<BaseLoja>images/chat.png"></a>
+<br><a href='intent://send/55<tag-WHATSAPP>#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end'><img src="<BaseLoja>images/whatsapp2.png"></a>
+<br>WhatsApp <a href='intent://send/55<tag-RICARDO>#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end'>(55) <tag-RICARDO></a>
+<br>ou <a href='intent://send/55<tag-RAFAEL>#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end'>(55) <tag-RAFAEL></a>
+
+<td align=center valign=center nowrap> <!-- td funcoes -->
+
+<style>
+.topo_links td { vertical-align: center; }
+</style>
+
+<table class=topo_links>
+<tr><td>
+<a href=addproduto.asp?IDLoja=20214><img src=<BaseLoja>images/cart.png></a>
+<td align=left><a href=addproduto.asp?IDLoja=20214>Cesta de compras</a>
+<tr><td>
+<a href=custom.asp?IDLoja=20214&arq=pedido.htm><img src=<BaseLoja>images/lupa.png width=36></a>
+<td align=left><a href=custom.asp?IDLoja=20214&arq=pedido.htm>Consultar pedido</a>
+<tr><td>
+<a href=faleconosco.asp?IDLoja=<IDLoja>><img src=<BaseLoja>images/fone.png width=36></a>
+<td align=left><a href=faleconosco.asp?IDLoja=<IDLoja>>Fale conosco</a>
+<tr><td>
+<a href=mailto:contato@facanabota.com><img src=<BaseLoja>images/mail.png width=36></a>
+<td align=left><a href=mailto:contato@facanabota.com>contato@facanabota.com</a>
+</table>
+
+<td valign=top align=center style='padding: 10px;'>
+
+<a href=custom.asp?IDLoja=<IDLoja>&arq=english.htm style='font-color: black;' title="English - Instructions for buying from outside of Brazil"><img src=<BaseLoja>images/english.png width=24><br>English</a>
+
+</table> <!-- TB1 -->
+
+<table style="width: 1000px;" cellspacing=0 cellpadding=0> <!-- TB MENU SUPERIOR ESCURO -->
+<tr>
+<td valign=top>
+
+<!--
+<div id=mega_tapetes style="display: none; position: absolute; top: 145px; margin-left: 49px; background: #fff; border: 1px solid #000; padding: 10px; width: 400px; height: 300px;">
+<b>Todos</b>
+<br><a href=ListaProdutos.asp?IDLoja=20214&Avancada=True&IDCategoria=173608&order=2>1,5 x 2,0m</a>
+<br><a href=ListaProdutos.asp?IDLoja=20214&Avancada=True&IDCategoria=174810&order=2>2,0 x 2,5m</a>
+<br><a href=ListaProdutos.asp?IDLoja=20214&Avancada=True&IDCategoria=174812&order=2>2,0 x 3,0m</a>
+<br><br><b>Pronta Entrega</b>
+<br><a href=ListaProdutos.asp?IDLoja=20214&Avancada=True&IDCategoria=173608&order=2&Adicional1=97411>1,5 x 2,0m</a>
+<br><a href=ListaProdutos.asp?IDLoja=20214&Avancada=True&IDCategoria=174810&order=2&Adicional1=97411>2,0 x 2,5m</a>
+<br><a href=ListaProdutos.asp?IDLoja=20214&Avancada=True&IDCategoria=174812&order=2&Adicional1=97411>2,0 x 3,0m</a>
+</div>
+-->
+
+<!-- <script>fundo();</script> -->
+
+<!--[if !IE]><!-->
+<style>
+// Redimensionamento de imagens de produtos, exceto Explorer
+//#ProdListaDiv .EstImgFC{ max-width: 220px; max-height: 180px; width: auto; }
+</style>
+<!--<![endif]-->
+
+<style>
+#menu2 a { font-size: 10pt; }
+#menu2 a:hover { color: #f50; text-decoration: underline; }
+#menu2 a:visited { color: #fff; text-decoration: none; }
+</style>
+
+<div style='width: 1000px; text-align:center; background-color: #445;' id=menu2>
+<table cellspacing=0 cellpadding=0 width=1000> <!-- menu -->
+  <tr>
+    <td align=center class=FundoMenu2_Off>
+      <a href="home.asp?IDLoja=<idlojanum>" class="LinkMenu2">Home</a>
+    </td>
+    <td align=center class=FundoMenu2_Off>
+      <!--<a href="ListaProdutos.asp?IDLoja=20214&Avancada=True&IDCategoria=165772&Adicional1=97411" class="LinkMenu2">-->
+<a href="custom.asp?IDLoja=20214&arq=tapetes_de_couro.htm" class="LinkMenu2">Tapetes de couro</a>
+    </td>
+<td align=center class=FundoMenu2_Off><a class="LinkMenu2" href="ListaProdutos.asp?Avancada=True&IDLoja=<IDLoja>&Digitada=True&Texto=%22CC%3Abranco%22">Brancos</a>
+<td align=center class=FundoMenu2_Off><a class="LinkMenu2" href="ListaProdutos.asp?Avancada=True&IDLoja=<IDLoja>&Digitada=True&Texto=%22CC%3Abege%22">Beges</a>
+<td align=center class=FundoMenu2_Off><a class="LinkMenu2" href="ListaProdutos.asp?Avancada=True&IDLoja=<IDLoja>&Digitada=True&Texto=%22CC%3Acinza%22">Cinzas</a>
+<td align=center class=FundoMenu2_Off><a class="LinkMenu2" href="ListaProdutos.asp?Avancada=True&IDLoja=<IDLoja>&Digitada=True&Texto=%22CC%3Apreto%22">Pretos</a>
+    <td align=center class=FundoMenu2_Off>
+      <a href="ListaProdutos.asp?IDLoja=20214&Avancada=True&IDCategoria=165367" class="LinkMenu2">Redondos</a>
+    </td>
+    <td align=center class=FundoMenu2_Off><a href="custom.asp?IDLoja=20214&arq=peles.htm" class="LinkMenu2">Peles</a>
+    <td align=center class=FundoMenu2_Off><a href="custom.asp?idloja=20214&arq=la_de_carneiro.htm" class="LinkMenu2">Lã de carneiro</a>
+    <td align=center class=FundoMenu2_Off><a href="/custom.asp?IDLoja=20214&arq=simulador.htm" class="LinkMenu2" style="color: #fea;">Simulador de preços</a>
+    </td>
+    <td align=center class=FundoMenu2_Off><a href="custom.asp?IDLoja=20214&arq=bolsas.htm" class="LinkMenu2">Malas e bolsas</a>
+    </td>
+    <td align=center class=FundoMenu2_Off><a href="ListaProdutos.asp?IDLoja=20214&Avancada=True&Adicional1=97411&IDCategoria=164528" class="LinkMenu2">Facas</a>
+    </td>
+  </tr>
+</table> <!-- menu -->
+</div>
+
+<!-- <script>AtivaLinkMenu2();</script> -->
+
+<style>
+#marquee { line-height: 20px; background-color: #777; color: white; font-weight: bold; font-size: 8pt; height: 20px; width: 1000px; overflow: hidden; }
+#marquee a { color: white; padding-left: 20px; }
+#marquee a:hover { color: #f55; }
+</style>
+
+<script>
+$(function(){
+var $mwo = $('#marquee');
+$mwo.marquee({
+	speed: 20000,
+	gap: 50,
+	delayBeforeStart: 1000,
+	direction: 'left',
+	duplicated: true,
+	pauseOnHover: true
+});
+$mwo.mouseover( function(e){ $mwo.trigger('pause'); } );
+$mwo.mouseout( function(e){ $mwo.trigger('resume'); } );
+});
+</script>
+
+<!--
+<div id=marquee>
+<a href=custom.asp?origem=marquee&IDLoja=20214&arq=promocao.html>Tapetes de couro, malas de couro e facas artesanais com excelentes preços. Até 20% de desconto!</a>
+<a href=ListaProdutos.asp?origem=marquee&IDLoja=20214&Avancada=True&Digitada=True&texto=&Any=False&IDCategoria=165772&Adicional1=97411&Buscar=Buscar>Tapetes de couro em estoque para pronta entrega. Confirme o pagamento e seu pedido pode ser remetido no mesmo dia!</a>
+</div>
+-->
+
+<script>
+new Autocomplete('query', { 
+    serviceUrl:'BuscaTermosProd.asp?IDLoja=<IDLojaNum>',
+    minChars:2,
+    maxHeight:300,
+    width:370,
+    deferRequestBy:500,
+    showResults:1,
+    autoSubmit:false,
+   onSelect: function(value, data){
+     document.buscaprod.Texto.value=value;
+     document.buscaprod.submit();
+   }
+});
+</script>
+
+<!--[if IE]>
+<style>
+.autocomplete{position:relative;top:0;left:0}
+.autocomplete .suggestionsResults{/* IE specific: */ width:40%;}
+</style>
+<![endif]-->
