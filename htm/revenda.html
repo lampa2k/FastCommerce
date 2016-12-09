@@ -1,0 +1,81 @@
+<style>
+input, select { font-size: 8pt; }
+textarea { font-size: 8pt; }
+li { padding: 2px; }
+</style>
+
+<script>
+function enviar() {
+  alert("Seus dados foram enviados. Aguarde nosso contato em breve. Se não houver retorno em até 2 dias úteis, queira entrar em contato por telefone ou Chat.");
+  document.getElementsByName("form")[0].submit();
+} // func
+</script>
+
+<div class=custom_title>Orientações para revendedores</div>
+
+<br>Prezado lojista ou comerciante,
+<br>Seguem abaixo as condições comerciais para revendedores:
+
+<ul><b>Para compras acima de 10 unidades</b>
+<li>25% a 30% de desconto para pagamento à vista no boleto ou depósito
+<!--
+<li>5-10% de desconto para pagamento de 50% na data do pedido e 50% antes da remessa dos produtos
+<li>5% de desconto para pagamento parcelado em até 3x nos cartões
+<li>Frete por conta do comprador (com possibilidade de negociação)
+-->
+<li>Prazo de 2 dias úteis para remessa de produtos em estoque
+<li>Prazo de 30-40 dias para fabricação de produtos encomendados
+<li><b>Não trabalhamos com vendas à prazo ou com consignação (pagamento na entrega)</b>
+</ul>
+
+<ul><b>Para compras abaixo de 10 unidades</b>
+<li>As condições são as mesmas do consumidor final
+<li>20% de desconto para pagamento à vista no boleto ou depósito
+<!--
+<li>5% de desconto para pagamento à vista nos cartões de crédito
+<li>3% de desconto para pagamento em até 2x nos cartões de crédito
+-->
+<li>Até 12 X sem juros nos cartões
+<li>Frete grátis
+<li>Prazo de 2 dias úteis para remessa de produtos em estoque
+<li>Prazo de 20-30 dias para fabricação de produtos encomendados
+</ul>
+
+Caso concorde com as condições acima, queira informar seus dados de contato e os produtos que deseja adquirir.
+<br>Por favor, seja específico e forneça o máximo de informações possível, assim poderemos lhe informar melhor.
+
+<form name=form method=POST action=EnviaMail.asp>
+
+<input type=hidden name=Assunto value='Solicitação de revenda'>
+<input type=hidden name=EmailPara value='contato@facanabota.com'>
+<input type=hidden name=OrdemCampos value="">
+<input type=hidden name=URLRetorno value='<HTMLoja>revenda.html'>
+
+<br><br><table>
+<tr><td align=right><b>Nome:</b> <td><input type=text name=NomeDe size=30 value="<NomeCliente>">
+<tr><td align=right><b>e-mail:</b> <td><input type=text name=EmailDe size=30>
+<tr><td align=right><b>Site da loja:</b> <td><input type=text name=Site size=40>
+<tr><td align=right><b>Razão social:</b> <td><input type=text name=Razao size=50>
+<tr><td align=right><b>CNPJ:</b> <td><input type=text name=CNPJ size=30>
+<tr><td align=right><b>Telefone fixo (com DDD):</b> <td><input type=text name=Fixo size=20>
+<tr><td align=right><b>Celular Vivo:</b> <td><input type=text name=Vivo size=20>
+<tr><td align=right><b>Celular TIM:</b> <td><input type=text name=TIM size=20>
+<tr><td align=right><b>CEP:</b> <td><input type=text name=CEP size=10>
+<tr><td align=right><b>Cidade e Estado:</b> <td><input type=text name=Cidade_Estado size=40>
+<tr><td align=right><b>Condição de pagamento:</b> <td>
+<input type=checkbox name=Pagamento value="Deposito ou boleto"> À vista no depósito ou boleto
+<br><input type=checkbox name=Pagamento value="A vista cartao"> À vista no cartão de crédito
+<br><input type=checkbox name=Pagamento value="2x cartao"> Parcelado em 2x no cartão de crédito
+<br><input type=checkbox name=Pagamento value="6x cartao"> Parcelado em até 6x no cartão de crédito
+<br><input type=checkbox name=Pagamento value="50% e 50%"> 50% no pedido e 50% antes da remessa
+<tr><td align=right><b>Produtos:</b> <td><textarea name=Produtos rows=6 cols=50></textarea><br>Por favor, queira especificar quantidade, referência, tamanho, padrão, cor, etc.
+<tr><td>&nbsp;
+<tr><td align=right><b>Observações:</b> <td><input type=text name=Obs size=60>
+<tr><td><td><input type=button value="Enviar dados" onclick="enviar();">
+</table>
+
+</form>
+
+<script>
+document.title = "Revendedores - Loja Faca na Bota";
+</script>
