@@ -1,0 +1,34 @@
+<style>
+.pinfo li { padding: 10px; width: 80%; text-align: justify; }
+</style>
+
+<div class=custom_title>Consulta de situação do pedido</div>
+
+<br><b>Informações importantes:</b>
+<ul class=pinfo>
+<li><b>Prazo de fabricação:</b> O prazo de fabricação para os produtos que não estão marcados com "Disponibilidade: Pronta Entrega" é de até 20 dias úteis a partir da confirmação do pagamento (25 dias úteis para tapetes em tons claros, como branco ou bege). Se seu pedido está na situação "Aprovado" ou "Pagamento verificado", significa que seu produto está sendo fabricado e que estará pronto e será remetido dentro do prazo informado anteriormente. Se houver algum atraso você será informado por e-mail.
+<li><b>Remessa do pedido:</b> Seu pedido será remetido usando o serviço PAC dos Correios, exceto nos casos em que o cliente optou pela opção SEDEX, pagando uma diferença. Note que o prazo para receber seu produto em mãos é a soma do prazo de fabricação e do prazo de entrega dos Correios. Consta abaixo uma tabela com prazos aproximados fornecida pelos Correios:
+<ul>
+Regiões Sul e Sudeste: de 3 à 8 dias úteis<br>
+Região Central: de 5 à 10 dias úteis<br>
+Região Norte e Nordeste: de 5 à 12 dias úteis<br>
+Amazônia e Acre: de 10 à 20 dias úteis<br>
+</ul>
+<li><b>Atraso no envio:</b> Se o produto estava marcado como "Pronta Entrega" e não foi enviado em até 2 dias úteis, significa que, provavelmente, o estoque foi esgotado antes de podermos remeter seu produto. De qualquer forma, faremos o possível para fabricar rapidamente seu produto e remetê-lo o mais breve possível. Se um ou mais dos produtos em seu pedido não estão disponíveis para Pronta Entrega e o prazo de 20 dias úteis para a remessa foi atingido e você ainda não recebeu a notificação da remessa, pode ter havido dificuldade na aquisição de material para fabricação ou houve atraso devido à grande quantidade de pedidos. Fique à vontade para entrar em contato, caso não tenha sido avisado da razão do atraso.
+<li><b>Contato:</b> Para outras informações referentes a seus pedidos, queira entrar em contato por e-mail, telefone ou pelo Atendimento Online.
+</ul>
+
+Para consultar a situação atual do seu pedido, preencha os dados abaixo:
+<br>
+<br>
+<form name=FormHist action="/sistema/Track.asp" method=GET>
+<table>
+<tr><td align=right>e-mail do pedido: <td><input name=Email size=35 maxlength=50 value='' class=InputText>
+<tr><td align=right>Número do pedido: <td><input name=NumPedido size=10 maxlength=10 value='' class=InputText>
+<tr><td><td><input type=hidden name="IDLoja" value="20214"><input type=submit name="Enviar" value=" Enviar ">
+</table>
+</form>
+
+<script>
+document.title = "Situação do Pedido - Loja Faca na Bota";
+</script>
