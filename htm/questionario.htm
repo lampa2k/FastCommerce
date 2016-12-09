@@ -1,0 +1,100 @@
+<style>
+.quest input, .quest select { font-size: 8pt; }
+</style>
+
+<script>
+function enviar() {
+  alert("Suas respostas foram enviadas. Muito obrigado pela sua participação!");
+  document.getElementsByName("quest")[0].submit();
+} // func
+</script>
+
+<div class=custom_title>Pesquisa de satisfação</div>
+
+<br>Temos algumas perguntas breves para fazer a você, cliente da Loja Faca na Bota.
+
+<br><br>Já divulgamos os resultados da Pesquisa de Satisfação anterior. <a href=custom.asp?idloja=<idloja>&arq=resultado.html>Clique aqui para ver.</a>
+
+<br><br><form name=quest method=POST action=EnviaMail.asp class=quest>
+
+<input type=hidden name=Assunto value='Pesquisa de satisfação'>
+<input type=hidden name=EmailPara value='contato@facanabota.com'>
+<input type=hidden name=URLRetorno value='<HTMLoja>questionario.htm'>
+
+<b>Por gentileza, informe seus dados pessoais:</b>
+<table>
+<tr>
+<td align=right><b>Nome:</b> <td><input type=text name=NomeDe size=30 value="<NomeCliente>">
+<td align=right><b>e-mail:</b> <td><input type=text name=EmailDe size=30>
+</table>
+
+<br><table>
+
+<tr><td>
+
+<b>Como você conheceu a Loja Faca na Bota?</b>
+<br><select name=Origem>
+<option value=""></option>
+<option value="Google">Google</option>
+<option value="Facebook">Facebook</option>
+<option value="MLivre">Mercado Livre</option>
+<option value="Feira">Feira</option>
+<option value="Amigo">Indicação de amigo</option>
+</select>
+ Outro: <input type=text name=Origem_outro size=20>
+
+<br><br><b>Que produtos novos você gostaria de ver na loja?</b>
+<br><input type=text name=Novos_Produtos size=50>
+
+<br><br><b>Como você avalia a qualidade dos produtos?</b>
+<br><input type=radio name=Qualidade_Produtos value=Ruim> Insatisfatória
+<br><input type=radio name=Qualidade_Produtos value=Boa> Boa
+<br><input type=radio name=Qualidade_Produtos value=Excelente> Excelente
+
+<br><br><b>Que nota você dá para o atendimento da loja?</b>
+<br><input type=radio name=Nota_Atendimento value=1> 1
+ &nbsp; <input type=radio name=Nota_Atendimento value=2> 3
+ &nbsp; <input type=radio name=Nota_Atendimento value=5> 5
+ &nbsp; <input type=radio name=Nota_Atendimento value=8> 8
+ &nbsp; <input type=radio name=Nota_Atendimento value=10> 10
+
+<br><br><b>Você acha que os preços dos produtos são justos?</b>
+<br><input type=radio name=Preco_Justo value=Sim> Sim
+ &nbsp; <input type=radio name=Preco_Justo value=Quase> Mais ou menos
+ &nbsp; <input type=radio name=Preco_Justo value=Nao> Não, são muito caros
+
+<td> &nbsp; &nbsp; &nbsp; &nbsp;
+
+<td>
+
+<b>O que você acha dos prazos de fabricação dos produtos?</b>
+<br><select name=Prazo>
+<option value=Longo> Muito longos</option>
+<option value=Razoavel> Razoáveis</option>
+<option value=Otimo> Ótimos</option>
+</select>
+
+<br><br><b>Que partes do site da loja você acha que podem melhorar?</b>
+<br><input type=checkbox name=Melhorar_Paginas value=Home> Página inicial
+<br><input type=checkbox name=Melhorar_Paginas value=Produto> Detalhes sobre o produto
+<br><input type=checkbox name=Melhorar_Paginas value=Busca> Busca de produtos
+<br><input type=checkbox name=Melhorar_Paginas value=Checkout> Processamento do pedido
+<br><input type=checkbox name=Melhorar_Paginas value=Promocoes> Promoções
+<br><input type=checkbox name=Melhorar_Paginas value=Faq> Perguntas frequentes
+<br><input type=checkbox name=Melhorar_Paginas value=Track> Rastreamento do pedido
+<br>Outra: <input type=text name=Melhorar_Outros size=20>
+
+<br><br><b>Gostaria de fazer algum elogio ou dar alguma sugestão?</b>
+<br><input type=text name=Observacoes size=60>
+
+</table>
+
+<br><br>Observações: Os dados que você fornecer serão usados de modo sigiloso pela própria loja. Apenas os resultados gerais poderão ser divulgados sem revelar a identidade dos participantes.
+
+<br><br><input type=button value="Enviar respostas" onclick="enviar();">
+
+</form>
+
+<script>
+document.title = "Pesquisa de Satisfação - Loja Faca na Bota";
+</script>
