@@ -1,0 +1,330 @@
+/* FastCommerce Modelo 9 */
+
+form { margin: 0; padding: 0; }
+
+/*  Topo Personalizado */
+.TopBackgroundCustom{background-color: #eee; height:100px;padding-top:1px;width:100%}
+.TopLogo{display:block; position:relative; float:left;top:10px;margin-left:15px;}
+.TopTab{background-image:url(../images/TopTab.png);background-repeat:no-repeat;width:2px;height:42px;padding: 0px 10px 42px 10px}
+.TopTabTransparent{width:2px;height:42px;padding: 0px 10px 42px 10px}
+.TopLogoBarMenuOne{display:block; position:relative; float:right; text-align:center; white-space:nowrap;font-size:10px;font-family:tahoma,arial;}
+.TopLogoBarMenuOne a{color:#283138;text-decoration:none}
+.TopLogoBarMenuOne a:hover{color:#e13300;text-decoration:underline}
+.T123opLogoBarMenuTwo{display:block; float:left; position:relative; width:900px; margin-top:29px; background:#4E5962;}
+.TopLogoBarMenuTwo{display:block; float:left; position:relative; width:747px;background:#4E5962;}
+
+body{padding: 10px 0px 20px 1px;font:80% Tahoma;margin:0px auto;text-align:left; background: #fafafa; font-size:8pt; font-family:Tahoma,Arial;}
+p{font-size:8pt;font-family:tahoma,arial}
+TH{background:#FFFFCC;color:#336699;font-size:9pt;font-family:tahoma,arial}
+TD{font-size:8pt;font-family:tahoma,arial}
+img{border-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:none}
+
+/* Estilos de fundo */
+.FundoSiteCentro{background:#FFFFFF}
+
+/* Estilos para as páginas */
+@font-face {
+  font-family: tahoma,arial;
+}
+.Titulos{color:#e13300;font-family:tahoma,Arial;font-size:22px;font-weight:bold;}
+.smSelect, .smText{font-size:8pt;font-family:tahoma}
+.mnText, .TextoPequeno{font-size:7pt;font-family:tahoma}
+.mdtxt{font-size:9pt;font-family:tahoma,arial}
+.lgtxt{font-size:10pt;font-weight:bold;color:#e13300;font-family:tahoma,arial;text-decoration:none}
+
+/* Estilos para a capa */
+.EstTexto1{font-weight:bold;color:#242d3a;font-size:12px;font-family:tahoma,arial;position:relative;top:5px;left:15px}
+.EstTexto2, .EstTexto3{font-size:8pt;font-family:tahoma}
+.EstTexto4{font-size:16pt;color:#FFFFFF;position:relative;left:30px;top:10px;font-family:tahoma,Arial;}
+.EstTexto5{font-size:14pt;color:#FFFFFF;position:relative;left:0px;top:20px;font-family:tahoma,Arial;}
+.StyNameProdHome{font-family:tahoma;font-size:8pt;font-weight:bold;color:#e13300;text-decoration:none}
+.StyNameProdHome:visited{color:#e13300}
+.StyNameProdHome:active{color:#e13300}
+.StyNameProdHome:hover{color:#e13300;text-decoration:underline}
+.EstListaNomeProdCapa, .EstDescrProdCapa{font-size:8pt;font-family:tahoma}
+.EstAdicProdCapa{font-size:8pt;font-family:tahoma,arial}
+.AdicNomeCapa{font-size:8pt;font-family:tahoma}
+.AdicItemCapa{font-size:8pt;font-family:tahoma;font-weight:bold;color:#e13300;white-space:normal;}
+.EstPrecoProdCapa{color:#000000;font-size:8pt;font-family:tahoma,arial}
+.EstFundoTabCapa{background:#FFFFFF;font-size:8pt;font-family:tahoma,arial}
+.StyBorderProdHome{border-color:#DDDDDD;border-width:1px;border-style:solid}
+.HomeBorderUnderline{height:30px;vertical-align:middle;background:url(../images/1_li.png);font-weight:bold;color:#242d3a;font-size:10px;}
+.HomeImageBackground{background-image:url(../images/HomeImageBackground.png);background-color:#454648;height:120;width:550;position:relative;left:-10px;}
+.EstPrecoProdCapa strike{color:#5c87c6}
+
+/* Estilos para a Barra */
+.FundoBarraDireita, .EstCorTabInt, .EstLinhaBarra, .EstLinhaBarraExt{background:#FFFFFF}
+.EstTitSecao{background:#efefef;font-size:8pt;color:#333333;font-family:tahoma;font-weight:bold}
+.EstCorTabExt, .EstCorTabPromExt{background:#efefef}
+.EstCorTabPromInt{background:#F9F9F9}
+.EstListaNomeProdBarra{font-size:8pt;font-family:tahoma;font-weight:bold;color:#928A44}
+.EstPrecoProdBarra{font-size:8pt;color:#454648;font-family:tahoma,arial,Helvetica,sans-serif}
+
+/*  Estilo para os formulários BOTÕES e INPUTs TEXT */
+.InputText, .InputTextBusca{border-color:#000060;border-width:1px;border-style:solid;background-color:#F5F5F5;font-size:11;font-family:tahoma;color:#545B8F}
+.InputButton{border-width:1px;font-size:11;font-family:tahoma}
+
+/*  Estilo BOTÕES */
+.BotLancamento{color:#FF0101;font-size:7pt;font-family:tahoma,arial}
+.BotComprar{display:none}
+.BotEsgotado, .BotExcluir{font-size:8pt;font-family:tahoma,arial}
+.BotMaisDetalhes{color:#e13300;font-size:7pt;font-family:tahoma,arial;text-decoration:none}
+
+/*  Texto das Setas de VER MAIS */
+.BotVerMais{color:#e13300;font-size:8pt;font-family:tahoma,arial;font-weight:bold;text-decoration:none}
+.BotVerMais:hover{color:#FF0000;text-decoration:underline}
+
+/*  Fundo do topo e menu */
+.TopoMenu{background-color: #fff;}
+.MenuTop a:link{font-size:8pt;font-family:tahoma,arial;color:#283138;text-decoration:none}
+.MenuTop a:visited{color:#283138}
+.MenuTop a:active{color:#283138}
+.MenuTop a:hover{color:#e13300;text-decoration:underline}
+
+.TopCustomMenu{font-size:8pt;font-family:tahoma,arial;color:#283138;text-decoration:none}/*position:relative;left:10px;top:-35px;*/
+.TopCustomMenu:visited{color:#283138}
+.TopCustomMenu:active{color:#283138}
+.TopCustomMenu:hover{color:#e13300;text-decoration:underline}
+.TopMenuMiddle{width:270px;font-size:10px;font-family:tahoma;text-align:left}
+.TopMenuMiddle a:link{color:#283138;text-decoration:none}
+.TopMenuMiddle a:hover{color:#e13300;text-decoration:none}
+.TopMenuMiddle ul{list-style:none;margin-top:0px;margin-left:0px;padding:0px;text-align:left}
+.TopMenuMiddle ul li{float:left;width:130px;padding:0px 0px 5px 5px}
+.TopMenuMiddle img{width:10px;height:10px;position:relative;top:2px;left:-2px;margin: 0px 0px 0px 0px;padding:2px 0px 0px 0px;border-style:none;}
+
+/*  Menu */
+.LinkMenu2{text-decoration:none;color:#FFFFFF}
+.FundoMenu2_On{background-image:url(../images/MenuBackground2_On.png);background-color:#49525b;font-size:8pt;font-family:tahoma,arial;color:#FFFFFF;text-decoration:none;font-weight:bold;cursor:default;height:29px;width:auto;}
+.FundoMenu2_On a:visited{color:#FFFFFF;text-decoration:underline}
+.FundoMenu2_Off{background-image:url(../images/MenuBackground2_Off.png);background-color:#2e363d;font-size:8pt;font-family:tahoma,arial;color:#FFFFFF;text-decoration:none;font-weight:bold;height:29px;width:auto;}
+.FundoMenu2_Hover{background-image:url(../images/MenuBackground2_Hover.png);background-color:#49525b;font-size:8pt;font-family:tahoma,arial;color:#e03f01;font-weight:bold;height:29px;width:auto;}
+.FundoMenu2_Hover a:hover{color:#e03f01;text-decoration:underline;}
+
+
+
+/*  Menu inferior (Cinza) */
+.FundoTopoInf{background-image:url(../images/FundoTopoInf.png)}
+.MenuInf{font-size:7pt;font-family:tahoma,arial;color:#044376;text-decoration:none}
+.MenuInf:visited{color:#044376}
+.MenuInf:active{color:#F5D957}
+.MenuInf:hover{color:#333333;text-decoration:underline}
+
+/*  Menu padrão */
+.TopoMenuAtual{font-weight:bold;font-size:8pt;font-family:tahoma;color:#333333;background:#FD7300;text-decoration:none}
+.TopoMenuAtual:visited{color:333333}
+.TopoMenuAtual:active{color:333333}
+.TopoMenuAtual:hover{color:#333333}
+.TopoMenuNormal{font-weight:bold;font-size:8pt;font-family:tahoma;color:#e13300;background:#FD7300;text-decoration:none}
+.TopoMenuNormal:visited{color:#e13300}
+.TopoMenuNormal:active{color:#e13300}
+.TopoMenuNormal:hover{color:#333333}
+
+/*  Menu da ESQUERDA */
+.FundoBarraEsquerda{background-image:url(../images/BackgroundLeftBar.png);background-color:#ecedef;}
+.EsquerdaMenuAtual{font-size:8pt;font-family:tahoma;color:#e13300;background:#F1F1F1;text-decoration:none;font-weight:bold}
+.EsquerdaMenuAtual:visited{color:#e13300}
+.EsquerdaMenuAtual:active{color:#e13300}
+.EsquerdaMenuAtual:hover{color:#283138}
+.EsquerdaMenuNormal{font-size:8pt;font-family:tahoma;color:#572222;background:#F1F1F1;text-decoration:none;font-weight:bold}
+.EsquerdaMenuNormal:visited{color:#283138}
+.EsquerdaMenuNormal:active{color:#283138}
+.EsquerdaMenuNormal:hover{color:#e13300;text-decoration:underline}
+
+/* Barra Esquerda */
+.StyLeftBarTableless{width:250px;border:0px solid black;}
+.StyFastSearch{font-weight:bold}
+.StyDetailedSearch a{color:#888;font-size:8pt}
+.StySearch{display:block;font-size:9pt;font-family:tahoma,arial;width:163px;height:59px;}
+h1{font-size:12px;font-family:tahoma;position:relative;left:5px;top:12px}
+.PoweredBy{position:relative;top:15px;left:45px}
+.StyLeftCat{font-size:10pt;font-family:tahoma,arial;font-weight:bold;text-indent:5px; border-bottom: 1px dotted #888;padding:5px;margin-bottom:15px;}
+.StyLeftChat{}
+
+
+/*  Estilo do MENU CATEGORIA */
+.EstCatLista{background-image:url(../images/LeftMenuBackground.png);padding:6px 3px 6px 30px}
+.CategoriaMenuAtual{font-size:8pt;font-family:tahoma;color:#e13300;background:#F1F1F1;text-decoration:none}
+.CategoriaMenuAtual:visited{color:#e13300}
+.CategoriaMenuAtual:active{color:#e13300}
+.CategoriaMenuAtual:hover{color:#283138}
+.CategoriaMenuNormal{font-size:8pt;font-family:tahoma;color:#283138;background:#F1F1F1;text-decoration:none}
+.CategoriaMenuNormal:visited{color:#283138}
+.CategoriaMenuNormal:active{color:#283138}
+.CategoriaMenuNormal:hover{color:#e13300}
+
+/*  Estilo CATEGORIA */
+.EstCatNome{color:#283138;font-size:8pt;font-family:tahoma;text-decoration:none}
+.EstCatNome:visited{color:#283138}
+.EstCatNome:hover{color:#e13300;text-decoration:underline}
+.EstCatDescr{color:black;font-size:8pt;font-family:tahoma;text-decoration:none}
+
+/*  Estilo PRODUTOS */
+.EstNomeProd{color:#e13300;font-size:8pt;font-weight:bold;font-family:tahoma}
+.EstRefProd{color:#919191;font-size:7pt;font-family:tahoma,arial}
+.EstDescrProd{font-size:8pt;font-family:tahoma}
+.EstPrecoProd{color:#000000;font-size:8pt;font-family:tahoma,arial,Helvetica}
+.EstMaisInfo{color:black;font-size:7pt;font-family:tahoma}
+.AdicNome{font-size:8pt;font-family:tahoma}
+.AdicItem{font-size:8pt;font-family:tahoma;font-weight:bold;color:#0B4D79}
+.EstLinhaProd{color:#C5C2C2;height:1px;width:95%}
+
+/*  Estilo SUBPRODUTOS */
+.EstRefSubProd, .EstDescrSubProd{color:#000000;font-size:8pt;font-family:tahoma,arial}
+.EstPrecoSubProd{color:#283138;font-size:8pt;font-family:tahoma,arial}
+.EstLinhaSubProd{background:#B2B2B2;height:1px;width:450px}
+.EstCorParSubProd {background:#FFFFFF}
+.EstCorImparSubProd {background:#eeeeee;border:1px solid #dedede}
+
+/*  Estilo das opiniões de produtos */
+.EstOpiniaoLinha{color:#C5C2C2;height:1px;width:100%}
+
+/* Estilos do PEDIDO */
+.EstTabPedidoTit{background:#dfdfdf;color:#000000;font-size:8pt;font-family:tahoma,arial;font-weight:bold}
+.EstTabPedidoNome{color:#333333;font-size:8pt;font-weight:bold;font-family:tahoma,arial}
+.EstTabPedidoNome:visited{color:#333333}
+.EstTabPedidoNome:hover{color:#454648}
+.EstTabPedido{font-size:8pt;background:#F4F4F4}
+.EstTabPedidoNum{font-size:8pt;background:#F4F4F4;font-family:Courier New,Courier}
+.EstTabPedidoTotal, .EstTabPedidoFrete{font-size:8pt;background:#efefef;font-weight:bold}
+.EstTabPedidoBot{color:#000000;font-size:8pt;font-weight:bold;font-family:tahoma,arial}
+.EstTabPedidoRef{color:black;font-size:8pt;font-family:tahoma}
+.EstTabPedidoAdicNome{font-size:8pt;font-family:tahoma}
+.EstTabPedidoAdicItem{font-size:8pt;font-family:tahoma;font-weight:bold}
+.EstTextoQtd{font-size:8pt;font-family:tahoma;text-align:right}
+.EstContinuarComprando{font-size:9pt;font-weight:bold;font-family:tahoma;color:#454648}
+
+/* Estilo de Títulos de Tabela CADASTRO DE CLIENTES, AJUDA, CONFIRMAÇÃO DO PEDIDO */
+.EstTabTopo{padding:2px 2px 2px 2px;background:#efefef;color:#333333;font-size:9pt;font-family:tahoma;font-weight:bold}
+
+/* Estilo para a tabela de Busca Rápida, para tabela de Ajuda (Pagamentos) e Fale Conosco */
+.EstTabQuadro{background:#FFFFFF;font-size:8pt;font-family:tahoma,arial}
+
+/* Estilo dos campos do formulário clientes,fale conosco,... 	*/
+.EstNomeCampo{color:black;font-size:8pt;font-family:tahoma;font-weight:bold}
+.EstCampo{font-size:8pt;font-family:tahoma}
+#idTabRegisterFC .EstNomeCampo{width:45%;}
+#idTabRegisterFC {width:60%; margin-left:170; margin-right:200;}
+
+/*Rodapé*/
+.RodapeMenuNormal {font-size:8pt;font-family:tahoma,arial;color:#e63300;text-decoration:none;background-color:#ecedef;}
+.RodapeMenuNormal:visited {color:#e63300}
+.RodapeMenuNormal:active {color:#000000}
+.RodapeMenuNormal:hover {color:#000000;text-decoration:underline}
+.RodapeMenuAtual {font-size:8pt;font-family:tahoma,arial;color:#606060;text-decoration:underline;font-weight:bold;}
+.RodapeMenuAtual:visited {color:#606060}
+.RodapeMenuAtual:active {color:#DCF0FF}
+.RodapeMenuAtual:hover {color:#000000;text-decoration:underline}
+
+
+
+
+/*  Busca - ajax */
+.autocomplete-w1 {}
+.autocomplete{font-size:10px;border:1px solid #999;background:#FFF;cursor:default;max-height:350px;overflow:auto;margin:0px 0px 0px 0px; /* IE specific: */ _height:230px;  _margin:0px 0px 0px 0px; overflow-x:hidden; }
+.autocomplete .selected{background:#216cad;color:#FFF;}
+.autocomplete div{padding:1px 5px 1px 5px; white-space:nowrap;font-weight:normal;width:100%;text-align:left;display:inline-block;}
+.autocomplete .selected{color:#FFF;}
+.autocomplete strong{color:#4396ca;}	
+.autocomplete .selected strong{color:#000;}
+.autocomplete .suggestions{background:#f4f4f4;width:60%;}
+.autocomplete .suggestions{display: inline !ie;}/* IE */
+.autocomplete .selected .suggestions {color:#000;}
+.autocomplete .suggestionsResults{background:#f4f4f4;color:#377f44;width:33%;text-align:right;}
+.autocomplete .suggestionsResults{display: inline !ie;}/* IE */
+.autocomplete .selected .suggestionsResults{color:#000;}
+.hideSuggestClass{text-align:left;border:1px solid #D4D4D4;cursor:pointer;background-color:#FFFFFF;height:150px;overflow:auto;display:none;width:168px;margin:0px}
+.showSuggestClass .hideSuggestClass{display:block}
+.showSuggestClass .hoverSuggestClass{background-color:#E4E4E4}
+.productMenuClass{position:absolute;z-index:255}
+.productMenuClass3{position:absolute;z-index:255}
+.productItemClass{margin-left:2px;font-weight:normal;font-size:8pt;font-family:tahoma}
+
+/*Home tableless*/
+.HomeContent{display:block;width:550px;text-align:center}
+.HomeImageBackground ul{list-style-type:none;text-align:left}
+.HomeBorderUnderline{clear:left;position:relative;text-align:left}
+.HomeProductsPosition{display:block;padding:5px 0px 5px 0px;width:500px;text-align:center;margin:0 auto}
+.ProductsPosition{display:block;position:relative;float:left;padding:20px 8px 10px 8px}
+.ContentTabH1{display:block;clear:left;position:relative;width:289px;margin:0 auto}
+
+/*  Tabela de parcelamento */
+.TitTabParc{font-weight:bold;font-size:8pt;font-family:tahoma,arial}
+.EstParcPar{background:#efefef;font-size:8pt;font-family:tahoma}
+.EstParcImpar{background:#FFFFFF;font-size:8pt;font-family:tahoma}
+
+/*  Estilo Produto em DIV */
+#ProdCont{display:block;padding:5px 5px 5px 5px;width:540px;color:#000000;font-size:8pt;font-family:arial,Helvetica}
+.EstNomeLista{display:block;position:relative;float:left;color:#e13300;font-size:8pt;font-weight:bold;font-family:tahoma;left:20px}
+.EstNomeDetAmp{display:block;clear:left;position:relative;color:#e13300;font-size:8pt;font-weight:bold;font-family:tahoma;left:20px}
+.EstRefCont{color:#919191;font-size:7pt;font-family:tahoma,arial;font-weight:normal}
+.EstDescrLista{display:block;width:300px;color:#222222;font-size:8pt;font-family:tahoma;font-weight:normal}
+.EstDescrDet{display:block;position:relative;float:left;width:500px;color:#222222;font-size:8pt;font-family:tahoma;font-weight:normal}
+.EstPrecoDet{display:block;position:relative;float:left;left:40px;top:40px}
+.EstPrecoAmp{display:block;position:relative;float:left;width:40%}
+.EstPrecoContSub{display:block;position:relative;float:left;color:#000000;font-size:8pt;font-family:arial,Helvetica}
+.LinkComprarListaSub{display:block;width:120px;position:relative;float:left}
+.AdicionaisListaAmp{display:block;position:relative;float:left;width:50%}
+.TableParc{display:block;position:relative;float:left;left:50px}
+.ImagemProdAmp{display:block;clear:left;position:relative;text-align:center}
+.EstLancamentoCont{display:block;position:relative;text-align:right}
+.DetComprarLista{display:block;position:relative;float:left;width:120px}
+.TableExternaLista, .TableExternaListaSub{display:block}
+.AvisoDispLista, .AdicionaisListaSub, .TableParcAmp, .DivEspaco{display:block;clear:left;position:relative}
+.ImagemProdLista, .ImagemProdDet, .AdicionaisListaDet, .EstPrecoLista{display:block;position:relative;float:left}
+
+/* ESTILOS PARA AS FOTOS DE PRODUTOS  */
+#ProdCapaDiv .EstImgFC{width:120px;}
+#ProdListaDiv .EstImgFC{ width:220px; }
+//#ProdListaDiv .EstImgFC { width: expression( this.clientWidth > 240 ? "240px" : "auto" ); }
+//#ProdListaDiv .EstImgFC{ height: expression( this.scrollHeight > 220 ? "220px" : "auto" ); }
+#ProdDetDiv .EstImgFC{width:200}
+#ProdAmpDiv .EstImgFC{width:400}
+#ProdDetDiv .jqzoom{width:200}
+
+/* ESTILOS PARA AS FOTOS DE PRODUTOS NA CESTA E CROSS-SELLING  */ 
+.EstFotoProdCross {height:60;margin:0px 10px 0px 10px}
+.EstPrecoProdCross{color:#888888;font-weight:bold;font-size:8pt;font-family:tahoma,arial}
+.EstCatProdCross{display:none}
+.EstFotoProdCesta{width:60}
+
+/* Dados para entrega, campo obrigatório  */ 
+#idLocalFC .EstNomeCampo{color:#454648;}
+#idParaFC .EstNomeCampo{color:#454648;}
+#idPEmailFC .EstNomeCampo{color:#454648;}
+#idPEnderecoFC .EstNomeCampo{color:#454648;}
+#idtrPEnderecoNumFC .EstNomeCampo{color:#454648;}
+#idtrPEnderecoComplFC .EstNomeCampo{color:#454648;}
+#idPBairroFC .EstNomeCampo{color:#454648;}
+#idPCidadeFC .EstNomeCampo{color:#454648;}
+#idPEstadoFC .EstNomeCampo{color:#454648;}
+#idPPaisFC .EstNomeCampo{color:#454648;}
+#idPCEPFC .EstNomeCampo{color:#454648;}
+#idTablePCEPFC .EstNomeCampo{color:#454648;}
+#idPTelefoneFC .EstNomeCampo{color:#454648;}
+
+/* Zoom IMG Detalhe */
+//img {border-width: 1px;border-style:solid;border-color:#e0e0e0}
+.MagicZoom img {border-width: 0px; !important;padding: 0 !important;margin: 0 !important;}
+.MagicZoomBigImageCont {border: 1px solid #999;}
+.MagicZoomHeader {font-size: 8pt !important;line-height: normal !important;color: #fff;background: #666;
+text-align: center !important;}
+.MagicZoomPup {border: 1px solid #aaa;background: #fff;cursor: move;}
+.MagicZoomLoading {border: 1px solid #ccc;background: #fff url(../images/ajax-loader.gif) no-repeat 2px 50%;
+padding: 4px 4px 4px 24px !important;margin: 0;text-decoration: none;text-align: left;font-size: 8pt;font-family: sans-serif;color: #444;}
+
+/* Cores Btn */
+.CorBtnDet{}
+.CorBtn{}
+.CorBtnLanc{background-color:#e13300;}
+.CorBtnAmp{background-color:#e13300;}
+.CorBtnBusca{background-color:#f4f4f4;}
+.CorBtnRecCom{background-color:#e13300;}
+#idBotCartFC{background-color:#e13300;}
+
+/* Botão Ped Confirmação */
+.BotConfPed {background:green;color:#fcfcfc;border-width:1;border-color:#333333;font-weight:bold;font-size:14;font-family:tahoma;height:40px;width:300px;}
+.EstTextoContinuar{font-size:12pt;font-weight:bold;color:green;font-family:tahoma,arial;}
+.BotContinuarConfirmacao{background:green;color:#fcfcfc;border-width:1;border-color:#333333;font-weight:bold;font-size:14;font-family:tahoma;height:40px;width:300px;}
+.BotContinuar{font-size:12pt;font-weight:bold;}
