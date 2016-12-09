@@ -1,0 +1,49 @@
+<table width=400 border=0>
+  <tr>
+    <td align=right>
+      <form method=GET action=http://www.correios.com.br/encomendas/precos/calculo.cfm?resposta=&MaoPropria=n&valorDeclarado=&avisoRecebimento=N name=Form>
+      Origem:&nbsp;
+    </td>
+    <td>
+      <input type=text size=15 name=cepOrigem>
+    </td>
+  </tr>
+  <tr>
+    <td align=right>
+      Destino:&nbsp;
+    </td>
+    <td>
+      <input type=text size=15 name=cepDestino>
+    </td>
+  </tr>
+  <tr>
+    <td align=right>
+      Peso:&nbsp;
+    </td>
+    <td>
+      <input type=text size=15 name=peso>
+    </td>
+  </tr>
+  <tr>
+    <td align=right>
+      Tipo de envio:&nbsp;
+    </td>
+    <td>
+      <select name=servico size=1 style=width:150px>
+        <option value="" selected>Escolha...</option>
+        <option value="41106">PAC</option>
+        <option value="40010">SEDEX</option>
+        <option value="40215">SEDEX 10</option>
+        <option value="40290">SEDEX HOJE</option>
+        <option value="81019">e-SEDEX</option>
+        <option value="44105">MALOTE</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2 align=center><br><br>
+    <input type=submit value='Calcular' class=InputButton>
+    </form>
+  </td>
+  </tr>
+</table>
