@@ -1,0 +1,29 @@
+<script>
+IDLoja='<IDLoja>'
+sCaminhoImages='<BaseLoja>images/'
+</script>
+<script src=<BaseLoja>htm/LojaLib.js></script>
+
+<script>fundo();</script>
+
+<script>
+function FuncChkPaymentEnd(){
+var VisaE = document.getElementById("idTxtPagto16FC").innerHTML = "Cartão de Débito Electron";
+var Amex = document.getElementById("idTxtPagto3_1FC").innerHTML = "Cartão American Express";
+var Diners = document.getElementById("idTxtPagto3_2FC").innerHTML = "Cartão de Crédito Diners";
+var Visa = document.getElementById("idTxtPagto3_4FC").innerHTML = "Cartão de Crédito VISA";
+var Elo = document.getElementById("idTxtPagto3_7FC").innerHTML = "Cartão de Crédito ELO";
+var MasterCard = document.getElementById("idTxtPagto3_3FC").innerHTML = "Cartão de Crédito MasterCard";
+document.getElementById("idImgPagto16FC").src = "https://www.rumo.com.br/lojas/00020214/images/electron.gif";
+}
+</script>
+
+<table width="100%">
+	<tr>
+		<td align="center"><a href="home.asp?idloja=<IDLoja>"><img src="<BaseLoja>images/LogoTopo.png" border="0" alt="<NomeLoja>"/></a></td>
+	</tr>
+	<tr>
+		<td  align="center"><img src="<BaseLoja>images/pix.png" width="970" height="1"/>
+		</td>
+	</tr>
+</table>
