@@ -1,0 +1,206 @@
+<p254> <!-- GRANDE -->
+<FormProd>
+<style>
+#ProdListaDiv img {  }
+.EstNomeCatCapa, .spancat { font-weight: normal; font-size: 8pt; }
+.pt { margin-top: -8pt; }
+.EstRefProd { font-weight: normal; }
+</style>
+<table cellspacing=0 cellpadding=0 align=center><tr><td>
+<table width=100% class=EstCorTabInt align=center cellspacing=0 cellpadding=5>
+  <tr><td align=center class=EstNomeProd><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><NomeProd></a><br><span class=EstRefProd>Referência: <CodProd></span><br><span class=spancat>Categoria: <NomeCat></span>
+</td></tr>
+<tr><td align=center valign=top id=dispo>
+<Adicional1>
+<!-- <span id=und<IDProduto>></span>
+<script>try{ $( function() { unidades("<IDProduto>","und<IDProduto>"); } ); } catch(e) {}</script> -->
+<span class=pt>(Enquanto durarem os estoques)</span>
+</td></tr>
+<tr><td align=center height=<ProdAltura><div id="ProdListaDiv"><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><ImagemProd></a></div></td></tr>
+<script>
+var ADD1 = '<AdicionalD1>';
+var ADD2 = '<AdicionalD2>';
+if( ADD1 ) document.write("<tr><td align=center valign=top>"+ADD1+"</td></tr>");
+if( ADD2 ) document.write("<tr><td align=center valign=top>"+ADD2+"</td></tr>");
+</script>
+  <tr><td align=center>
+<script>if( <PrecoNum> != <PrecoOri> ) { MostraEconomia(<PrecoNum>,<PrecoOri>); document.write("<br>"); }</script>
+<PrecoSimples>
+<br><script>MostraMaxParcela(<PrecoNum>,<MaxParcelasProdNum>);</script>
+<br><script>vista(<PrecoNum>);</script>
+</td></tr>
+
+  <tr><td align=center>
+
+<table><tr>
+<td>
+<table cellpadding="0" cellspacing="0"><tr><td class="CorBtnDet"><a title="<NomeProd>" href='/prod,IDLoja,<IDLojaNum>,IDProduto,<IDProduto>,<NomeProdUA>'><img src='<BaseLoja>images/BotMaisDetalhes.png' alt='Clique para ver detalhes' class=BotDetProdOut border=0></a></td></tr></table>
+<td>
+<table class="CorBtn" cellpadding="0" cellspacing="0"><tr><td><LinkComprar></td></tr></table>
+</td></tr>
+<!--<tr><td colspan=2 align=center><a class="fancybox fancybox.iframe" href="ListaProdutos.asp?IDLoja=<IDLoja>&Int=1&IDProduto=<IDProduto>">Clique aqui para espiar</a>-->
+</table>
+</table>
+
+<style>
+.buttonDetalhes, .buttonComprar { color: white; font-weight: bold; text-align: center; width: 80px; height: 14px; padding: 2px; }
+.buttonDetalhes { background-color: #888; float: left; }
+.buttonComprar { background-color: #d30; float: right; }
+</style>
+
+<!--
+<div style='display: table; width: 200px;'>
+<div class=buttonDetalhes>Detalhes</div>
+<div class=buttonComprar>Comprar</div>
+<div style='clear: both;'></div>
+</div>
+-->
+
+<!--
+<a title="<NomeProd>" href='/prod,IDLoja,<IDLojaNum>,IDProduto,<IDProduto>,<NomeProdUA>'></a>
+<a title="<NomeProd>" href='/prod,IDLoja,<IDLojaNum>,IDProduto,<IDProduto>,<NomeProdUA>'></a>
+-->
+
+</td></tr></table>
+</FormProd>
+<br>&nbsp;
+</p254>
+
+
+
+<p250> <!-- BRINDES -->
+
+<FormProd>
+<table width=160 style="padding: 0 5;">
+    <tr><td align=center><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><div id="ProdCapaDiv"><ImagemProd></div></a>
+  <tr>
+    <td align=center class=StyNameProdHome><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><NomeProd></a>
+<tr><td align=center><b>Ref.: <CodProd></b>
+  <tr>
+    <td align=center><AdicionalD1>
+</table>
+</p250>
+
+
+
+
+<p255> <!-- PEQUENOS -->
+
+<FormProd>
+<table width=160 style="padding: 0 5;">
+    <tr><td align=center><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><div id="ProdCapaDiv"><ImagemProd></div></a></td>
+  </tr>
+  <tr>
+    <td align=center class=StyNameProdHome><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><NomeProd></a></td>
+  </tr>
+  <tr>
+  <tr>
+    <td align=center><!--<DescricaoCurta>--><AdicionalD1> </td>
+  </tr>
+<tr><td align=center valign=top id=dispo class=255>
+<Adicional1>
+<span style='margin-top: -8pt;'>Enquanto durarem<br>os estoques</span>
+<script>
+$(".255 .AdicNomeCapa").html("");
+</script>
+</td></tr>
+  <tr>
+    <td align=center class=EstPrecoProdCapa><script>document.write('<Preco>'.replace("por ",""));</script></td>
+  </tr>
+<tr><td align=center><script>MostraMaxParcela(<PrecoNum>,<MaxParcelasProdNum>);</script>
+  <tr><td align=center style='padding-top: 5px;'>
+<script>vista(<PrecoNum>);</script>
+</td>
+<tr>
+    <td align=center><table cellpadding="0" cellspacing="0"><tr><td class="CorBtnDet"><a title="<NomeProd>" href='/prod,IDLoja,<IDLojaNum>,IDProduto,<IDProduto>,<NomeProdUA>'><img src='<BaseLoja>images/BotMaisDetalhes.png' alt='Clique para ver detalhes' class=BotDetProdOut border=0></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+    <td align=center><table cellpadding="0" cellspacing="0"><tr><td class="CorBtn"><LinkComprar></td></tr></table></FormProd></td>
+  </tr>
+<!--<tr><td align=center><a class="fancybox fancybox.iframe" href="ListaProdutos.asp?IDLoja=<IDLoja>&Int=1&IDProduto=<IDProduto>">Espiar</a>-->
+</table>
+</p255>
+
+
+<p252> <!-- ESTOFADOS -->
+
+<script>
+var est_preco = est_<CodProd>[0];
+</script>
+
+<FormProd>
+<table cellspacing=1 cellpadding=0 align=center><tr><td>
+<table width=100% class=EstCorTabInt align=center cellspacing=0 cellpadding=5>
+  <tr><td align=center class=EstNomeProd><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><NomeProd></a></td></tr>
+<tr><td align=center valign=top class=EstRefProd>Ref. <CodProd></td></tr>
+  <tr><td align=center height=<ProdAltura><div id="ProdListaDiv"><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><ImagemProd></a></div></td></tr>
+  <tr height=60><td align=center class=EstPrecoProd><b><script>document.write(FormatPrecoReais(est_preco));</script></b><br><script>MostraMaxParcela(est_preco,<MaxParcelasProdNum>);</script>
+<br><script>vista(est_preco);</script>
+</td></tr>
+
+  <tr><td align=center>
+
+<table cellpadding="0" cellspacing="0"><tr><td class="CorBtnDet"><a title="<NomeProd>" href='/prod,IDLoja,<IDLojaNum>,IDProduto,<IDProduto>,<NomeProdUA>'><img src='<BaseLoja>images/BotMaisDetalhes.png' alt='Clique para ver detalhes' class=BotDetProdOut border=0></a></td></tr></table>
+
+</td></tr>
+</table>
+</td></tr></table>
+</FormProd>
+</p252>
+
+
+<p253> <!-- NYLON -->
+<style>
+.EstRefProd { font-weight: normal; }
+</style>
+<FormProd>
+<table cellspacing=1 cellpadding=0 align=center><tr><td>
+<table width=100% class=EstCorTabInt align=center cellspacing=0 cellpadding=5>
+  <tr><td align=center class=EstNomeProd><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><NomeProd></a><br><span class=EstRefProd>Ref. <CodProd></span></td></tr>
+  <tr><td align=center height=<ProdAltura><div id="ProdListaDiv"><a href="/prod,idloja,<idlojanum>,idproduto,<IDProduto>,<NomeProdUA>"><ImagemProd></a></div></td></tr>
+<script>
+var ADD1 = '<AdicionalD1>';
+var ADD2 = '<AdicionalD2>';
+if( ADD1 ) document.write("<tr><td align=center valign=top>"+ADD1+"</td></tr>");
+//if( ADD2 ) document.write("<tr><td align=center valign=top>"+ADD2+"</td></tr>");
+</script>
+<tr><td align=center valign=top id=dispo><Adicional1><span style='margin-top: -8pt;'>(Enquanto durarem os estoques)</span></td></tr>
+  <tr height=60><td align=center class=EstPrecoProd>
+<script>
+if( <PrecoNum> < <PrecoOri> ) {
+document.write("<br>");
+MostraEconomia(<PrecoNum>,<PrecoOri>);
+} // if
+</script>
+<br><PrecoSimples><br><script>MostraMaxParcela(<PrecoNum>,<MaxParcelasProdNum>);</script>
+<br><script>vista(<PrecoNum>);</script>
+</td></tr>
+
+  <tr><td align=center>
+
+<table>
+<tr><td>
+
+<table cellpadding="0" cellspacing="0"><tr><td class="CorBtnDet"><a title="<NomeProd>" href='/prod,IDLoja,<IDLojaNum>,IDProduto,<IDProduto>,<NomeProdUA>'><img src='<BaseLoja>images/BotMaisDetalhes.png' alt='Clique para ver detalhes' class=BotDetProdOut border=0></a></td></tr></table>
+
+<td>
+
+<table class="CorBtn" cellpadding="0" cellspacing="0"><tr><td><LinkComprar></td></tr></table>
+
+</td></tr>
+
+<!--<tr><td colspan=2 align=center><a class="fancybox fancybox.iframe" href="ListaProdutos.asp?IDLoja=<IDLoja>&Int=1&IDProduto=<IDProduto>">Espiar</a>-->
+
+</table>
+
+</td></tr>
+</table>
+
+<script>tamanhos("<CodProd>")</script>
+
+</td></tr></table>
+</FormProd>
+<br>
+</p253>
