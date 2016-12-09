@@ -1,0 +1,33 @@
+<script src=<BaseLoja>htm/depoimentos.js></script>
+
+<style>
+	#depoimento { margin: 30px 0; padding: 5px 0; }
+</style>
+
+<div class=custom_title>Depoimentos de clientes</div>
+<br>Seguem abaixo alguns depoimentos espontâneos de nossos clientes.<br>Se desejar entrar em contato com o cliente, clique sobre seu nome, quando o mesmo tiver autorizado a publicação de seu e-mail.
+<br><br>Você pode também ver fotos dos produtos enviadas pelos clientes, <a href=custom.asp?IDLoja=20214&arq=fotos.html>clicando aqui</a>.
+
+<br><br>Também divulgamos os resultados da Pesquisa de Satisfação. <a href=custom.asp?idloja=<idloja>&arq=resultado.html>Clique aqui para ver.</a>
+
+<br><br>Se desejar, acesse nossa página oficial no Facebook para ficar em dia com as novidades e ler outros depoimentos: <a href="http://www.facebook.com/facanabota" target=_blank>www.facebook.com/facanabota</a>
+
+<br><br>
+
+<table>
+<tr><td>Estado: <td><select name=estado><option value=></option><option value=RS>RS</option><option value=SP>SP</option><option value=PR>PR</option><option value=SC>SC</option><option value=MG>MG</option><option value=RJ>RJ</option><option value=BA>BA</option><option value=PE>PE</option><option value=ES>ES</option><option value=RO>RO</option><option value=AC>AC</option><option value=AM>AM</option><option value=RR>RR</option><option value=PA>PA</option><option value=AP>AP</option><option value=TO>TO</option><option value=MA>MA</option><option value=PI>PI</option><option value=CE>CE</option><option value=RN>RN</option><option value=PB>PB</option><option value=AL>AL</option><option value=SE>SE</option><option value=MS>MS</option><option value=MT>MT</option><option value=GO>GO</option><option value=DF>DF</option></select>
+<td> Cidade: <td><input type=text name=cidade size=30>
+ <input type=button onclick='buscar();' value='Procurar depoimentos'>
+</table>
+
+<br><br><div id=numero></div>
+
+<div id=depoimentos>
+<script>depoimentos();</script>
+</div>
+
+<br><br><br>Mande também o seu depoimento para <a href=mailto:contato@facanabota.com>contato@facanabota.com</a>
+
+<script>
+document.title = "Depoimentos","Loja Faca na Bota";
+</script>
